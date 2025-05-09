@@ -34,11 +34,11 @@ const Result = () => {
         <div className="flex">
           <span>Total Earn Points : </span>
           <span className="bold">30</span>
+        </div>
 
-          <div className="flex">
-            <span>Quize Result</span>
-            <span className="bold">Passed</span>
-          </div>
+        <div className="flex">
+          <span>Quize Result : </span>
+          <span className="bold">Passed</span>
         </div>
       </div>
 
