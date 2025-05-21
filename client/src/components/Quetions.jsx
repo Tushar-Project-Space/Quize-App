@@ -44,7 +44,6 @@ export default function Questions({ onChecked }) {
               id={`q${i}-option`}
               onChange={() => onSelect(i)}
             />
-
             <label className="text-primary" htmlFor={`q${i}-option`}>
               {q}
             </label>
