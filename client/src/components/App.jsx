@@ -1,18 +1,17 @@
 import "../styles/App.css";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 /** import components */
-import Main from "./Main";
-import Quiz from "./Quiz";
-import Result from "./Result";
-import { CheckUserExist } from "../helper/helper";
+import Main from "./Main.jsx";
+import Quiz from "./Quiz.jsx";
+import Result from "./Result.jsx";
+import { CheckUserExist } from "../helper/helper.jsx";
 
 /** react routes */
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main></Main>,
+    element: <Main />,
   },
   {
     path: "/quiz",
@@ -33,11 +32,9 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return (
-    <>
-      <RouterProvider router={router} />
-    </>
-  );
+  console.log("App is rendering...");
+
+  return <RouterProvider router={router} />;
 }
 
 export default App;
